@@ -1,3 +1,6 @@
+// Но warning остался: AdditionOfTwoNumbers.java:14: warning: use of default constructor, which does not provide a comment         public class AdditionOfTwoNumbers {  
+// Исправь, пожалуйста, код, так чтобы его не было!
+
 import java.util.Scanner;
 
 /**
@@ -9,15 +12,7 @@ import java.util.Scanner;
  * </p>
  */
 public class AdditionOfTwoNumbers {
-
-    /**
-     * Default constructor for {@code AdditionOfTwoNumbers}.
-     * This constructor is not used directly since all methods are static,
-     * but is defined to satisfy Javadoc completeness.
-     */
-    public AdditionOfTwoNumbers() {
-        // No initialization required
-    }
+    // No initialization required
 
     /**
      * Entry point of the program.
@@ -49,7 +44,7 @@ public class AdditionOfTwoNumbers {
         
         scanner.close();
     }
-
+    
     /**
      * Adds two integers and returns the result.
      *

@@ -4,6 +4,15 @@
 public class HelloWorld {
 
     /**
+     * Default constructor for {@code HelloWorld}.
+     * This constructor is not used directly since all methods are static,
+     * but is defined to satisfy Javadoc completeness.
+     */
+    private HelloWorld() {
+        // No initialization required
+    }
+
+    /**
      * Entry point of the program.
      * @param args command-line arguments
      */
