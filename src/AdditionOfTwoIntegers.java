@@ -1,6 +1,3 @@
-// Но warning остался: AdditionOfTwoNumbers.java:14: warning: use of default constructor, which does not provide a comment         public class AdditionOfTwoNumbers {  
-// Исправь, пожалуйста, код, так чтобы его не было!
-
 import java.util.Scanner;
 
 /**
@@ -11,12 +8,20 @@ import java.util.Scanner;
  * calculates their sum using a separate method, and prints the result.
  * </p>
  */
-public class AdditionOfTwoNumbers {
-    // No initialization required
+public class AdditionOfTwoIntegers {
 
+/**
+     * Default constructor for {@code AdditionOfTwoIntegers}.
+     * This constructor is not used directly since all methods are static,
+     * but is defined to satisfy Javadoc completeness.
+     */
+    public AdditionOfTwoIntegers() {
+        // No initialization required
+    }
+    
     /**
      * Entry point of the program.
-     * Handles user interaction and delegates addition logic to the {@code add} method.
+     * Handles user interaction and delegates addition logic.
      *
      * @param args command-line arguments (not used)
      */
@@ -30,11 +35,11 @@ public class AdditionOfTwoNumbers {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        firstNumber = scanner.nextInt();
+        firstNumber = readInt(scanner);
         System.out.println("First Number: " + firstNumber);
 
         System.out.print("Enter the second number: ");
-        secondNumber = scanner.nextInt();
+        secondNumber = readInt(scanner);
         System.out.println("Second Number: " + secondNumber);
 
         System.out.println("Adding two numbers together...");
@@ -43,6 +48,24 @@ public class AdditionOfTwoNumbers {
         System.out.println("Result: " + result);
         
         scanner.close();
+    }
+    
+    /**
+     * Reads a valid integer from the console input.
+     *
+     * @param scanner the Scanner object for input
+     * @return a valid integer entered by the user
+     */
+    public static int readInt(Scanner scanner) {
+        while (true) {
+            if (scanner.hasNextInt()) {
+                return scanner.nextInt();
+            } else {
+                System.out.println("Invalid input");
+                System.out.print("Please enter a whole number: ");
+                scanner.next(); // discard invalid token
+            }
+        }
     }
     
     /**
