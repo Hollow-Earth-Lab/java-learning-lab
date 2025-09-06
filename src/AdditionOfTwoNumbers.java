@@ -1,6 +1,3 @@
-//    Настроил пробелы вместо табов. Оцени код, пожалуйста!
-
-
 public class AdditionOfTwoNumbers {
 
     public static void main(String[] args) {
