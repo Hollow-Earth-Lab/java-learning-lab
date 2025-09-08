@@ -31,20 +31,25 @@ public class AdditionOfTwoDoubles {
         
         double firstNumber;
         double secondNumber;
-        String input;
-
+        
         System.out.println("Hi, let's add up two numbers!");
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        input = scanner.next().replace(",", ".");
-        firstNumber = Double.parseDouble(input);
+        
+        // input = scanner.next().replace(",", ".");
+        // firstNumber = Double.parseDouble(input);
+        firstNumber = readDouble(scanner);
+        
         System.out.println("First Number: " + firstNumber);
 
         System.out.print("Enter the second number: ");
-        input = scanner.next().replace(",", ".");
-        secondNumber = Double.parseDouble(input);
+        
+        // input = scanner.next().replace(",", ".");
+        // secondNumber = Double.parseDouble(input);
+        secondNumber = readDouble(scanner);
+        
         System.out.println("Second Number: " + secondNumber);
 
         System.out.println("Adding two numbers together...");
@@ -54,7 +59,36 @@ public class AdditionOfTwoDoubles {
         
         scanner.close();
     }
-
+    
+    /**
+     * Reads a valid double from the console input.
+     *
+     * @param scanner the Scanner object for input
+     * @return a valid double entered by the user
+     */
+    public static double readDouble(Scanner scanner) {
+        while (true) {
+            String input = scanner.next().replace(",", ".");
+            try {
+                return Double.parseDouble(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Error: " + e.getMessage());
+                // e.printStackTrace(); // Выводит стек вызовов
+                System.out.println("Invalid input");
+                System.out.print("Please enter a valid decimal number: ");
+            }
+            /*
+            if (scanner.hasNextDouble()) {
+                return scanner.nextDouble();
+            } else {
+                System.out.println("Invalid input");
+                System.out.print("Please enter a valid decimal number: ");
+                scanner.next(); // discard invalid token
+            }
+            */
+        }
+    }
+    
     /**
      * Adds two decimals and returns the result.
      *
