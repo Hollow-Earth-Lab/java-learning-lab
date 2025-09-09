@@ -1,10 +1,10 @@
-# Java MathLab: Addition Modules
+# Java Learning Lab: Addition Modules
 
 Welcome to **Java Learning Lab**, a collection of clean, documented console-based programs for practicing programming in Java. Each module is designed with clarity, error handling, and Javadoc documentation — perfect for learning, teaching, or extending.
 
 ## 🚀 What’s Inside
 
-This repository contains two focused programs:
+This repository contains focused programs:
 
 ### 1. `AdditionOfTwoIntegers.java`
 - Adds two whole numbers (`int`)
