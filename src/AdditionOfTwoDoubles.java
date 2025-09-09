@@ -1,5 +1,3 @@
-// Проверь код, Copilot
-
 import java.util.Scanner;
 
 /**
@@ -68,7 +66,8 @@ public class AdditionOfTwoDoubles {
      */
     public static double readDouble(Scanner scanner) {
         while (true) {
-            String input = scanner.next().replace(",", ".");
+            String input = scanner.nextLine().replace(",", ".");
+            // String input = scanner.next().replace(",", ".");
             try {
                 return Double.parseDouble(input);
             } catch (NumberFormatException e) {
