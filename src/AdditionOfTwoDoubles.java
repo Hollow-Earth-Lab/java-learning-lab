@@ -30,10 +30,10 @@ public class AdditionOfTwoDoubles {
         double firstNumber;
         double secondNumber;
         
-        System.out.println("Hi, let's add up two numbers!");
-
         Scanner scanner = new Scanner(System.in);
-
+        
+        System.out.println("Hi, let's add up two numbers!");
+        
         System.out.print("Enter the first number: ");
         
         // input = scanner.next().replace(",", ".");
