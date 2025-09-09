@@ -19,5 +19,6 @@ public class HelloWorld {
     public static void main(String[] args) {
         // Prints a message to the console
         System.out.println("Hello, World!");
+        System.out.println("??????, ???!");
     } // End of the main method
 } // End of public class HelloWorld
