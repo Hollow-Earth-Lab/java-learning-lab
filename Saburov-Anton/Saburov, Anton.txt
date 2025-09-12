@@ -1,0 +1,57 @@
+Сабуров, Антон (Saburov, Anton)
+
+Сабуров, Антон - Изучаем Java
+https://www.youtube.com/@java8599/videos
+
+H:\[Education]\Java\Сабуров, Антон (Saburov, Anton)\Начинаем программировать на Java\Audio\
+
+01. Начинаем программировать на Java (http://www.java-course.ru)
+https://youtu.be/2eg7inSzFsw
+
+02. Объектно-ориентированные конструкции Java (http://www.java-course.ru)
+https://youtu.be/lIoVoYOTITI
+
+03. Базы данных в Java (http://www.java-course.ru)
+https://youtu.be/SLHygFFpZ9c
+
+04. Web-программирование в Java (http://www.java-course.ru)
+https://youtu.be/w3tBK4utVu0
+https://www.youtube.com/watch?v=w3tBK4utVu0
+
+05. Использование XML в Java (http://www.java-course.ru)
+https://youtu.be/Ks2WGQfked4
+
+06. Многопоточное программирование в Java (http://www.java-course.ru)
+https://youtu.be/tVRcT-Ngvsw
+
+07. Web-программирование в Java (www.java-course.ru) (1)
+https://youtu.be/Hi4VbexDkn4
+https://www.youtube.com/watch?v=Hi4VbexDkn4
+
+08. Коллекции в Java (www.java-course.ru)
+https://youtu.be/qsOYmeSsNN8
+https://www.youtube.com/watch?v=qsOYmeSsNN8
+
+09. Что такое ООП и ШП (Часть 1 - http://java-course.ru)
+https://www.youtube.com/watch?v=q_8UsvjLzBo
+
+10. Что такое ООП и ШП (Часть 2 - http://java-course.ru)
+https://www.youtube.com/watch?v=DlU_cJeY0bE
+
+11. Что такое ООП и ШП (Часть 3 - http://java-course.ru) 
+https://www.youtube.com/watch?v=viTH9UCAd-4
+
+12. Потоки ввода-вывода - IO и NIO (http://java-course.ru)
+https://youtu.be/r9paa9AJ7Gk
+
+13. Что такое Reflection — Часть 1 (http://java-course.ru)
+https://youtu.be/krMEqPTJvPE
+
+14. Что такое Reflection — Часть 2 (http://java-course.ru)
+https://youtu.be/HCQ9FDgvFxE
+
+15. Работа с сетью на Java (Networking) (http://java-course.ru)
+https://youtu.be/0T-4IfQYQeg
+
+16. Что такое Maven (http://java-course.ru)
+https://youtu.be/c2sBG5emv1o

@@ -1,0 +1,37 @@
+
+public class SoloLearn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// System.out.println("Hello world!");
+		// int x = 15; 
+		// int y = 4;
+		// float result = x / y;
+		// System.out.println(result);
+		
+		// What value is stored in the result variable?
+		// int x = 8, y = 5;
+		// int result = x % y;
+		// System.out.println(result);
+		
+		int test = 5;
+		--test; 
+		System.out.println(test);
+		int a = 10;
+
+		++a;
+
+		System.out.println(a);
+		
+		// Example:
+			int x = 34;
+			int y = ++x; // y is 35
+			System.out.println(y);
+
+			String firstName, lastName;
+	        firstName = "David";
+	        lastName = "Williams";
+	        
+	        System.out.println("My name is " + firstName +" "+lastName);		
+		}
+}

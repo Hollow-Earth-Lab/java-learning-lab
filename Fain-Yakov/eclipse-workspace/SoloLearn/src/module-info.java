@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Epic
+ *
+ */
+module SoloLearn {
+}

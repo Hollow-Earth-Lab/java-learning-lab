@@ -1,0 +1,13 @@
+
+public class SoloLearn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// System.out.println("Hello world!");
+		float x = 15; 
+		float y = 4;
+		float result = x / y;
+		System.out.println(result);
+	}
+
+}
