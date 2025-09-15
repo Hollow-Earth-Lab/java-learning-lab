@@ -1,6 +1,6 @@
-javac PrimeNumberDetector.java
+chcp 1251
 
-cls
+javac PrimeNumberDetector.java
 
 java PrimeNumberDetector
 

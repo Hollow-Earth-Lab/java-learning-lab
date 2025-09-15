@@ -1,0 +1,8 @@
+CodeWithMosh.com
+
+Programming with Mosh
+
+Programming with Mosh refers to the online courses and tutorials offered by Mosh Hamedani, a software engineer with over 20 years of experience. You can find a variety of programming courses on his website, CodeWithMosh.com, where he teaches popular programming languages and technologies through clear and practical video tutorials. Additionally, Mosh has a YouTube channel where he shares coding tutorials focused on real-world projects. For example, his Complete Python Mastery course provides a structured path to learn Python with hands-on projects.
+
+Java Full Course for Beginners
+https://youtu.be/eIrMbAQSU34

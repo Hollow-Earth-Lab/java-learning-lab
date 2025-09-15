@@ -1,0 +1,76 @@
+Упрощённая иерархическая структура основных пакетов Java Class Library (JCL)
+
+Ниже — упрощённая иерархическая структура основных пакетов Java Class Library (JCL). Она отражает типичные корневые пакеты, группы функциональности и примеры часто используемых под-пакетов — не полный список (JCL содержит сотни пакетов).
+
+- java
+  - java.lang — базовые классы (Object, String, Math, System, Thread, Class)
+  - java.util — коллекции и утилиты
+    - java.util.concurrent — concurrency utilities (Executor, Future, ConcurrentHashMap)
+    - java.util.function — функциональные интерфейсы (Predicate, Function)
+    - java.util.stream — Stream API
+    - java.util.logging — стандартный логгер
+    - java.util.regex — регулярные выражения
+    - java.util.spi — сервис-провайдеры
+  - java.io — старое IO (InputStream, OutputStream, Reader, Writer, Serializable)
+  - java.nio — New I/O (buffers, channels, charset)
+    - java.nio.charset
+    - java.nio.file — файловая система (Path, Files, FileVisitor)
+    - java.nio.channels
+  - java.net — сеть (Socket, ServerSocket, URL, HttpURLConnection)
+  - java.sql — JDBC (Connection, Statement, ResultSet, DriverManager)
+  - java.security — безопасность и криптография
+    - java.security.cert
+    - java.security.interfaces
+    - java.security.spec
+  - java.text — форматирование и парсинг (DateFormat, NumberFormat, Collator)
+  - java.time — современное API даты/времени (LocalDate, Instant, ZonedDateTime, Duration)
+    - java.time.format
+    - java.time.temporal
+  - java.beans — JavaBeans (Introspector, PropertyChangeSupport)
+  - java.rmi — удалённый вызов методов
+  - java.naming — JNDI
+  - java.xml — базовые XML API (парсинг, трансформация)
+    - java.xml.bind (JAXB в старых версиях)
+  - java.desktop — GUI и графика (AWT, Swing)
+    - java.awt
+    - javax.swing (в старых JCL часть стандартной поставки)
+  - java.instrument — инструменты агентирования JVM
+  - java.management — JMX и управление
+  - java.compiler — компилятор API (javax.tools)
+  - java.scripting — JSR-223 scripting API (ScriptEngine)
+  - java.prefs — Preferences API
+  - java.security.auth — аутентификация
+  - java.smartcardio — работа со смарт-картами
+
+- javax (пакеты, исторически добавленные как расширения)
+  - javax.crypto — криптография высокого уровня (Cipher, SecretKey)
+  - javax.net — расширения сетевого API (SSL)
+  - javax.xml — расширенные XML-спецификации (parsers, transformers)
+  - javax.sql — расширения JDBC (DataSource, RowSet)
+  - javax.annotation — аннотации
+  - javax.servlet — сервлеты (в отдельной спецификации, не всегда в JDK)
+  - javax.swing — Swing (в старых версиях JDK)
+  - javax.management — дополнения JMX
+
+- jakarta.* (в новых спецификациях и перенесённых из javax)
+  - jakarta.servlet
+  - jakarta.persistence
+  - jakarta.ws.rs
+  - и т.д.
+
+- com.sun.* и sun.* — внутренние/вендорные реализации (не для публичного использования)
+  - com.sun.crypto
+  - sun.misc (unsafe API — не рекомендуются)
+
+Примеры модульной структуры (Java 9+):
+- java.base — содержит java.lang, java.util, java.io и т.д. (обязателен)
+- java.logging
+- java.xml
+- java.sql
+- java.desktop
+- java.management
+- java.naming
+- java.net.http — HTTP Client (в Java 11 стал стандартом)
+- jdk.crypto.* — крипто-модули (в OpenJDK)
+
+Если нужна полная распечатка пакетов конкретной установленной JDK (например, Java 8, 11 или 17), укажи версию — я могу показать точный список пакетов/модулей для неё.

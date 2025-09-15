@@ -1,0 +1,11 @@
+The Java Handbook by Naughton, Patrick
+
+Naughton, Patrick The Java Handbook
+
+Java 2: The Complete Reference
+
+The Java Handbook
+Front Cover
+Patrick Naughton
+Osborne McGraw-Hill, 1996 - Computers - 424 pages
+In The Java Handbook, author Patrick Naughton--one of the world's foremost Java developers--shows users of every skill level the ins and outs of Java. The book begins with fundamentals such as basic Java language constructs, then moves on the Java's advanced capabilities. Plenty of insider code is given throughout. (Communications/Networking)

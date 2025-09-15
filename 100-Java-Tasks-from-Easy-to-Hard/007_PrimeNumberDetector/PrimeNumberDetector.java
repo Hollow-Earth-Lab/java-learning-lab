@@ -11,9 +11,11 @@ public class PrimeNumberDetector {
         Scanner scanner = new Scanner(System.in); 
 
         System.out.println();
-        System.out.println("Hi, this is a prime number detector!");
-        // System.out.print("Enter a positive integer from 2 to 2 147 483 647: ");
-        System.out.print("Enter a positive integer (2 - 2147483647):");
+        // System.out.println("Hi, this is a prime number detector!");
+        System.out.println("Привет, это определитель простых чисел!");
+
+        // System.out.print("Enter a positive integer (2 - 2147483647): ");
+        System.out.print("Введите положительное целое число от 2 до 2.147.483.647:");
         number = readInt(scanner);
         System.out.println();
         // System.out.println("The number is: " + number);
