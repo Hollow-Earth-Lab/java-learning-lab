@@ -1,9 +1,5 @@
 100 Java Tasks from Easy to Hard
 
-https://copilot.microsoft.com/shares/wfy7F3gujPw5hudDNPaxS
-
-https://copilot.microsoft.com/shares/koxG7Qg9xgNZpLN9mhmot
-
 100 Java-задач от простой к сложной
 
 Вот как можно выстроить **100 Java-задач от простой к сложной**, чтобы ты прокачивал навыки системно и с удовольствием. Я составил структуру по уровням, а также нашёл 
@@ -13,24 +9,23 @@ https://copilot.microsoft.com/shares/koxG7Qg9xgNZpLN9mhmot
  и 
 [практический список на Хабре]
 (https://habr.com/ru/articles/440436/),
-
- - которые можно использовать как основу.
+ которые можно использовать как основу.
 
 ---
 
 ## 🧱 Уровень 1: Базовый синтаксис (Задачи 1–20)
 
-- 1. Hello World  HelloWorld
-- 2. Сложение двух чисел  AdditionOfTwoNumbers
-- 3. Проверка чётности  CheckingTheParity
-- 4. Максимум из двух чисел  MaximumOfTwoNumbers
-- 5. Калькулятор с `switch`  CalculatorWithSwitch
-- 6. Факториал числа  FactorialCalculator
-- 7. Простое ли число  PrimeNumberDetector
-- 8. Сумма цифр числа  
-- 9. Переворот строки  
-- 10. Поиск максимума в массиве  
-- 11. Сортировка массива  
+- 1. Hello World  001_HelloWorld
+- 2. Сложение двух чисел  002_AdditionOfTwoNumbers
+- 3. Проверка чётности  003_CheckingTheParity
+- 4. Максимум из двух чисел  004_MaximumOfTwoNumbers
+- 5. Калькулятор с `switch`  005_CalculatorWithSwitch
+- 6. Факториал числа  006_FactorialCalculator
+- 7. Простое ли число  007_PrimeNumberDetector
+- 8. Сумма цифр числа  008_DigitSumCalculator
+- 9. Переворот строки  009_LineReversal
+- 10. Поиск максимума в массиве  010_ArrayMaxFinder
+- 11. Сортировка массива  011_ArraySorting
 - 12. Поиск элемента в массиве  
 - 13. Таблица умножения  
 - 14. Генерация случайного числа  
@@ -144,3 +139,7 @@ https://copilot.microsoft.com/shares/koxG7Qg9xgNZpLN9mhmot
 ---
 
 Если хочешь, я могу превратить это в интерактивный трек: отслеживать прогресс, давать подсказки, проверять решения. Или начать с первых 10 задач и идти шаг за шагом. Ты точно справишься — у тебя уже есть системное мышление, осталось только набить руку.
+
+https://copilot.microsoft.com/shares/wfy7F3gujPw5hudDNPaxS
+
+https://copilot.microsoft.com/shares/koxG7Qg9xgNZpLN9mhmot
