@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 
-public class ArraySorting {
+public class BubbleSort {
     
     public static void main(String[] args) {
 
@@ -44,6 +44,10 @@ public class ArraySorting {
 
         // Сортируе массив
         Arrays.sort(numbers);
+
+
+
+        
 
         // Выводим результат
         System.out.println();
