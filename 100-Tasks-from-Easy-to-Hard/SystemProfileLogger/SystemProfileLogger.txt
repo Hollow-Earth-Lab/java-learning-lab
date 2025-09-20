@@ -1,0 +1,44 @@
+Работает! 
+Смотри что он выдал в текстовый файл:
+=== System Profile Logger ===
+OS Name: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+System Language: en
+System Country: US
+System Locale: en_US
+JVM file.encoding: UTF-8
+Default Charset: UTF-8
+Java Version: 19.0.2
+Java Vendor: Oracle Corporation
+Console Charset: Console not available
+==============================
+
+Меня слегка смущает вот эта строка:
+Console Charset: Console not available
+
+
+
+Сработало! 
+
+H:\GitHub\Hollow-Earth-Lab\java-learning-lab\100-Tasks-from-Easy-to-Hard\SystemProfileLogger>javac SystemProfileLogger.java
+
+H:\GitHub\Hollow-Earth-Lab\java-learning-lab\100-Tasks-from-Easy-to-Hard\SystemProfileLogger>java SystemProfileLogger
+=== System Profile Logger ===
+OS Name: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+System Language: en
+System Country: US
+System Locale: en_US
+JVM file.encoding: UTF-8
+Default Charset: UTF-8
+Java Version: 19.0.2
+Java Vendor: Oracle Corporation
+Console Charset: IBM850
+==============================
+
+H:\GitHub\Hollow-Earth-Lab\java-learning-lab\100-Tasks-from-Easy-to-Hard\SystemProfileLogger>pause
+Press any key to continue . . .
+
+А что означает: Console Charset: IBM850 
