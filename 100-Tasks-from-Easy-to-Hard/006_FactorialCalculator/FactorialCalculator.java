@@ -10,6 +10,7 @@ public class FactorialCalculator {
 
         Scanner scanner = new Scanner(System.in); 
 
+        System.out.println();
         System.out.println("FactorialCalculator");
         System.out.print("Enter a positive integer from 0 to 20: ");
         number = readInt(scanner);

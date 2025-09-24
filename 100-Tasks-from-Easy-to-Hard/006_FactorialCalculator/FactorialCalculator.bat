@@ -1,7 +1,7 @@
-:cls
+@ :cls
 
-javac FactorialCalculator.java
+@ javac FactorialCalculator.java
 
-java FactorialCalculator
+@ java FactorialCalculator
 
-pause
+@ pause

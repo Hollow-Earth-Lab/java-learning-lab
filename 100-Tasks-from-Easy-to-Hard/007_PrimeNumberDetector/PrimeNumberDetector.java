@@ -13,6 +13,7 @@ public class PrimeNumberDetector {
         System.out.println();
         // System.out.println("Hi, this is a prime number detector!");
         System.out.println("Привет, это определитель простых чисел!");
+        System.out.println();
 
         // System.out.print("Enter a positive integer (2 - 2147483647): ");
         System.out.print("Введите положительное целое число от 2 до 2.147.483.647: ");
@@ -76,7 +77,7 @@ public class PrimeNumberDetector {
                 System.out.println("Limit^2 is:       " + (limit * limit));
                 System.out.println("The number is:    " + number);
                 // System.out.println("(Limit + 1)^2 is: " + ((limit + 1) * (limit + 1)));
-
+                System.out.println();
                 scanner.close();
                 return;
             }
@@ -90,7 +91,7 @@ public class PrimeNumberDetector {
         System.out.println("Limit^2 is:       " + (limit * limit));
         System.out.println("The number is:    " + number);
         // System.out.println("(Limit + 1)^2 is: " + ((limit + 1) * (limit + 1)));
-
+        System.out.println();
         scanner.close();
     }
 

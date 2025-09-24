@@ -1,7 +1,7 @@
-chcp 1251
+@ chcp 1251
 
-javac PrimeNumberDetector.java
+@ javac PrimeNumberDetector.java
 
-java PrimeNumberDetector
+@ java PrimeNumberDetector
 
-pause
+@ pause

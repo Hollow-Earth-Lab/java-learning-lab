@@ -3,18 +3,20 @@ import java.util.Scanner;
 // public class Main
 public class EmotionDetector {
    public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
-       int emotion = scanner.nextInt();
-       /*
-       1 - "You are happy!"
-       2 - "You are sad!"
-       3 - "You are angry!"
-       4 - "You are surprised!"
-       other - "Unknown emotion."
-       */
-       
-       // your code goes here
-       switch(emotion){
+
+        // your code goes here
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите целое число: ");
+        int emotion = scanner.nextInt();
+        /*
+        1 - "You are happy!"
+        2 - "You are sad!"
+        3 - "You are angry!"
+        4 - "You are surprised!"
+        other - "Unknown emotion."
+        */
+        switch(emotion){
             case 1:
                 System.out.println("You are happy!");
                 break;
@@ -30,6 +32,6 @@ public class EmotionDetector {
             default:
                 System.out.println("Unknown emotion.");
                 break;
-       }    
-   }
+        }    
+    }
 }
