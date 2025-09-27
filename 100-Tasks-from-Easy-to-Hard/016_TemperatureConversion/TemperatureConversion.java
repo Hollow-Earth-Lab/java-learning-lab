@@ -95,54 +95,54 @@ public class TemperatureConversion {
         System.out.println();
 
         if (scaleType == 1) {
-            System.out.print("Вы ввели:                  ");
+            System.out.print("Вы ввели:                   ");
             System.out.printf("%.2f", temperatureC);
             System.out.println(" °C");
 
             // Цельсий > Фаренгейт
             temperatureF = temperatureC * (9.0/5.0) + 32;
-            System.out.print("Температура по Фаренгейту: ");
+            System.out.print("Температура по Фаренгейту:  ");
             System.out.printf("%.2f", temperatureF);
             System.out.println(" °F");
 
             // Цельсий > Кельвин
             temperatureK = temperatureC + 273.15;
-            System.out.print("Температура по Кельвину:   ");
+            System.out.print("Температура по Кельвину:    ");
             System.out.printf("%.2f", temperatureK);
             System.out.println(" K");
         }
 
         if (scaleType == 2) {
-            System.out.print("Вы ввели:                  ");
+            System.out.print("Вы ввели:                   ");
             System.out.printf("%.2f", temperatureF);
             System.out.println(" °F");
 
             // Фаренгейт > Цельсий
             temperatureC = (temperatureF - 32) * (5.0/9.0);
-            System.out.print("Температура по Цельсию:    ");
+            System.out.print("Температура по Цельсию:     ");
             System.out.printf("%.2f", temperatureC);
             System.out.println(" °C");
 
             // Фаренгейт > Кельвин
             temperatureK = temperatureC + 273.15;
-            System.out.print("Температура по Кельвину:   ");
+            System.out.print("Температура по Кельвину:    ");
             System.out.printf("%.2f", temperatureK);
             System.out.println(" K");
         }
         if (scaleType == 3) {
-            System.out.print("Вы ввели:                  ");
+            System.out.print("Вы ввели:                   ");
             System.out.printf("%.2f", temperatureK);
             System.out.println(" K");
 
             // Кельвин > Цельсий
             temperatureC = temperatureK - 273.15;
-            System.out.print("Температура по Цельсию:    ");
+            System.out.print("Температура по Цельсию:     ");
             System.out.printf("%.2f", temperatureC);
             System.out.println(" °C");
 
             // Цельсий > Фаренгейт
             temperatureF = temperatureC * (9.0/5.0) + 32;
-            System.out.print("Температура по Фаренгейту: ");
+            System.out.print("Температура по Фаренгейту:  ");
             System.out.printf("%.2f", temperatureF);
             System.out.println(" °F");
         }

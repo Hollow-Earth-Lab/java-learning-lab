@@ -6,12 +6,19 @@ public class DecimalToBinary {
 
     public static void main(String[] args) {
 
-        int decimalNumber;
+        int decimalNumber = 0;
+        int quotient = 0;
+        int remainder = 0;
+
+        String reversedBinaryNumberStr = ""; // Объявляем пустую строку
+        StringBuilder reversedBinaryNumberSB = new StringBuilder();
+
+        String binaryNumberStr = "";
 
         System.out.println("Loading DecimalToBinary class...");
 
         do {
-            String decimalNumberStr = readLineFromConsole("Введите 1, 2 или 3: ");
+            String decimalNumberStr = readLineFromConsole("Введите число от 0 до "+ Integer.MAX_VALUE +": ");
             if (isInteger(decimalNumberStr)) {
                 decimalNumber = Integer.parseInt(decimalNumberStr);
                 if (decimalNumber >= 0) {
@@ -24,8 +31,31 @@ public class DecimalToBinary {
                 System.out.println("ОШИБКА: Вы ввели не число!");
             }
         } while (true);
-        
+
         System.out.println("Вы ввели: " + decimalNumber);
+
+        do {
+            remainder = decimalNumber % 2;
+            quotient = decimalNumber / 2;
+            // System.out.println(quotient);
+            System.out.println(remainder);
+            reversedBinaryNumberStr = reversedBinaryNumberStr + remainder;
+            reversedBinaryNumberSB.append(remainder);
+            decimalNumber = quotient;
+        } while (quotient > 0);
+
+        System.out.println("Двоичное число 'задом наперёд': " + reversedBinaryNumberStr);
+        /*
+        for (int i = reversedBinaryNumberStr.length() - 1; i >= 0; i--) {
+            binaryNumberStr += reversedBinaryNumberStr.charAt(i);
+        }
+        */
+
+        // binaryNumberStr = new StringBuilder(reversedBinaryNumberStr).reverse().toString();
+        binaryNumberStr = reversedBinaryNumberSB.reverse().toString();
+
+        System.out.println("'Готовое' двоичное число:       " + binaryNumberStr);
+
     }
 
     public static String readLineFromConsole(String prompt) {
@@ -43,7 +73,7 @@ public class DecimalToBinary {
             return false;
         }
     }
-
+    /*
     public static boolean isDouble(String str) {
         try {
             Double.parseDouble(str);
@@ -52,5 +82,6 @@ public class DecimalToBinary {
             return false;
         }
     }
+    */
 
 }
