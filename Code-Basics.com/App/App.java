@@ -1,45 +1,81 @@
-/* 
-Выведите на экран строку 2 times, полученную из числа 2.9 и строки times, 
-используя преобразования типов и конкатенацию.
-
+/*
+// Решение учителя:
 public class App {
     public static void main(String[] args) {
-        // BEGIN (write your solution here)
-        
-        System.out.println((int) 2.9 + " " + "times");
+        var text = "Never forget what you are, for surely the world will not";
+
+        // BEGIN
+        var result = "First: "
+            + text.charAt(0)
+            + "\nLast: "
+            + text.charAt(text.length() - 1);
+
+        System.out.println(result);
         // END
     }
 }
- */
 
-/* 
-В коде программы определены две переменные, содержащие имена компаний. Посчитайте их общую длину в символах и выведите ее на экран.
- */
+//Ваше решение:
+public class App {
+    public static void main(String[] args) {
+        var text = "Never forget what you are, for surely the world will not";
+
+        // BEGIN (write your solution here)
+        System.out.println("First: " + text.charAt(0));
+        System.out.println("Last: "  + text.charAt(text.length() - 1));
+        // END
+    }
+}
+
+//Решение @papazaitsa: можно еще по другому String.format("First: %s", text.charAt(0));
 
 public class App {
     public static void main(String[] args) {
-        var company1 = "Apple";
-        var company2 = "Samsung";
+        var text = "Never forget what you are, for surely the world will not";
 
         // BEGIN (write your solution here)
-        System.out.println((company1 + company2).length());
-        System.out.println("hexlet".substring(0));    // "hexlet"
-        System.out.println("hexlet".substring(1));    // "exlet"
-        System.out.println("hexlet".substring(1, 2)); // "e"
-        System.out.println("hexlet".substring(1, 3)); // "ex"
-        System.out.println("hexlet".substring(3, 6)); // "let
-
-        var one = "Naharis";
-        var two = "Mormont";
-        var three = "Sand";
-
-        // BEGIN (write your solution here)
-        System.out.print(one.charAt(2));
-        System.out.print(two.charAt(1));
-        System.out.print(three.charAt(3));
-        System.out.print(two.charAt(4));
-        System.out.print(two.charAt(2));
+        // можно еще по другому 
+        System.out.println(text.format("First: %s", text.charAt(0)));
+        System.out.println(text.format("Last: %s", text.charAt(text.length() - 1)));
         // END
+    }
+}
+
+public class App {
+    public static void main(String[] args) {
+        var text = "Never forget what you are, for surely the world will not";
+
+        // BEGIN (write your solution here)
+        // можно еще по другому String.format("First: %s", text.charAt(0));
+        System.out.println(String.format("First: %s", text.charAt(0)));
+        System.out.println(String.format("First: %s", text.charAt(text.length() - 1)));
+        // END
+    }
+}
+
+public class App {
+    public static void main(String[] args) {
+        var text = "Never forget what you are, for surely the world will not";
+        // BEGIN (альтернатива)
+        System.out.format("First: %s%n", text.charAt(0));
+        System.out.format("Last: %s%n", text.charAt(text.length() - 1));
+        // END
+    }
+}
+*/
+
+public class App {
+    public static void main(String[] args) {
+        var name = "hexlet";
+
+        // BEGIN (write your solution here)
+        String firstLetter;
+        String newName;
+
+        firstLetter = name.substring(0, 1);
+        firstLetter = firstLetter.toUpperCase();
+        newName = firstLetter + (name.substring(1)).toLowerCase();
+        System.out.println(newName);
         // END
     }
 }
