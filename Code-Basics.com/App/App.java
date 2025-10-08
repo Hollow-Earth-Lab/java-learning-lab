@@ -64,6 +64,7 @@ public class App {
 }
 */
 
+/*
 public class App {
     public static void main(String[] args) {
         var name = "hexlet";
@@ -76,6 +77,15 @@ public class App {
         firstLetter = firstLetter.toUpperCase();
         newName = firstLetter + (name.substring(1)).toLowerCase();
         System.out.println(newName);
+        // END
+    }
+}
+*/
+
+public class App {
+    public static void main(String[] args) {
+        // BEGIN (write your solution here)
+        System.out.println((int) (10 * Math.random()));
         // END
     }
 }

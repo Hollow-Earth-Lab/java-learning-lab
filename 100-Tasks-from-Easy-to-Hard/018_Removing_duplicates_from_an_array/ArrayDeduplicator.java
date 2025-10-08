@@ -37,7 +37,8 @@ public class ArrayDeduplicator {
         System.out.println();
 
         tempNumbers[0] = numbers[0];
-
+        
+        
 
         /*
         for (int i = 0; i < arraySize; i++) {
