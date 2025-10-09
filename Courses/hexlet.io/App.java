@@ -86,6 +86,7 @@ class App {
 }
  */
 
+/*
 class App {
     public static void main(String[] args) {
         
@@ -96,6 +97,36 @@ class App {
         // b = null; // error: incompatible types: <null> cannot be converted to int
         b = 66;
         System.out.println(b);
+    }
+}
+ */
+
+// ¬ыведите на экран строку 2 times, полученную из числа 2.9 и строки times, 
+// использу€ преобразовани€ типов и конкатенацию:
+
+class App {
+    public static void main(String[] args) {
+        // BEGIN (write your solution here)
+        double number = 2.9;
+        String str = "times";
+        
+        System.out.println((int) number + " " + str);
+        System.out.println("Hexlet".length()); // 6
+        System.out.println("ABBA".length()); // 4
+
+        var company = "Hexlet";
+        var companyLength = company.length();
+        System.out.println(company.length()); // => 6
+
+        System.out.println(companyLength); // => 6
+
+        // ѕриводим к верхнему регистру
+        company.toUpperCase(); // "HEXLET"
+                var company1 = "Apple";
+        var company2 = "Samsung";
+
+        System.out.println(company1.length() + company2.length());
+        // END
     }
 }
 
