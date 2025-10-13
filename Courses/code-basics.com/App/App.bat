@@ -1,7 +1,10 @@
+:: chcp 65001
+chcp 1251
+
 del App.class
 
-javac App.java
+javac -encoding Cp1251 App.java
 
-java App
+java -Dfile.encoding=Cp1251 App
 
 pause

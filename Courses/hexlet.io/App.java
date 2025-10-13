@@ -104,6 +104,7 @@ class App {
 // Выведите на экран строку 2 times, полученную из числа 2.9 и строки times, 
 // используя преобразования типов и конкатенацию:
 
+/*
 class App {
     public static void main(String[] args) {
         // BEGIN (write your solution here)
@@ -129,5 +130,45 @@ class App {
         // END
     }
 }
+ */
 
+class App {
+    public static void main(String[] args) {
+        // BEGIN (write your solution here)
 
+        var searchEngine = "google";
+        // Возвращает первый символ (тип char)
+        searchEngine.charAt(0); // 'g'
+        System.out.println(searchEngine.charAt(0)); // 'g'
+        System.out.println(searchEngine.charAt(5)); // 'e'
+        // System.out.println(searchEngine.charAt(7)); // Exception
+        System.out.println(searchEngine.replace("go", "mo")); // "moogle"
+
+        System.out.println("hexlet".substring(1));    // "exlet"
+        System.out.println("hexlet".substring(1, 2)); // "e"
+        System.out.println("hexlet".substring(1, 3)); // "ex"
+        System.out.println("hexlet".substring(3, 6)); // "let"
+        System.out.println("Hello!".substring(2));
+
+        var one = "Naharis";
+        var two = "Mormont";
+        var three = "Sand";
+
+        // Третий символ из первой строки
+        System.out.print(one.charAt(2));
+        System.out.print(" ");
+        // Второй символ из второй строки
+        System.out.print(two.charAt(1));
+        System.out.print(" ");
+        // Четвертый символ из третьей строки
+        System.out.print(three.charAt(3));
+        System.out.print(" ");
+        // Пятый символ из второй строки
+        System.out.print(two.charAt(4));
+        System.out.print(" ");
+        // Третий символ из второй строки
+        System.out.print(two.charAt(2));
+
+        // END
+    }
+}
