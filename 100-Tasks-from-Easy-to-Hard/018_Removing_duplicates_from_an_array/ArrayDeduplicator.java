@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayDeduplicator {
@@ -15,11 +14,13 @@ public class ArrayDeduplicator {
         int[] resultNumbers;
 
         while (true) {
-            input = readLineFromConsole("Введите число элементов массива: ");
+            input = readLineFromConsole("Введите число элементов массива (минимум два): ");
             // System.out.println("Вы ввели: " + input);
             if (isInteger(input)) {
-                arraySize = Integer.parseInt(input);;
-                break;
+                if (Integer.parseInt(input) > 1) {
+                    arraySize = Integer.parseInt(input);
+                    break;
+                }
             } else {
                 System.out.println("ОШИБКА: Вы ввели не число!");
             }
@@ -31,13 +32,16 @@ public class ArrayDeduplicator {
 
         for (int i = 0; i < arraySize; i++) {
             numbers[i] = (int) (Math.random() * 100);
-            System.out.println("i = " + numbers[i]);
+            System.out.println("numbers[" + i + "] = " + numbers[i]);
         }
 
-        System.out.println();
+        // System.out.println();
 
         tempNumbers[0] = numbers[0];
-        
+
+        if (numbers[1] != numbers[0]) {
+            tempNumbers[1] = numbers[1];
+        }
         
 
         /*

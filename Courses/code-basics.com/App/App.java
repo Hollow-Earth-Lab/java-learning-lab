@@ -222,6 +222,7 @@ public class App {
 // С точки зрения проверочной системы не имеет значения, каким из способов будет 
 // реализован метод truncate() внутри, главное – чтобы он выполнял поставленную задачу
 
+/*
 public class App {
     // BEGIN (write your solution here)
     public static void main(String[] args) {
@@ -234,5 +235,42 @@ public class App {
             return text;
         // END
     }
+    // END
+}
+ */
+
+
+public class App {
+    // BEGIN (write your solution here)
+    public static void main(String[] args){
+
+        /*
+        var result = 5 > 4;
+        System.out.println(result); // => true
+
+        System.out.println(App.isInfant(3)); // => false
+        System.out.println(App.isInfant(0)); // => 
+        */
+
+        System.out.println(App.isPensioner(75)); // true
+        System.out.println(App.isPensioner(18)); // false
+
+    }
+
+    // Задание
+    // Реализуйте метод isPensioner(), 
+    // который принимает один параметр — возраст человека, 
+    // и проверяет, является ли он пенсионным. 
+    // Пенсионером считается человек, достигший возраста 60 лет и больше.
+    public static boolean isPensioner(int age) {
+        return age >= 60;
+    }
+
+    // Метод, возвращающий boolean, называется предикатом
+    // Обычно такие методы имеют префикс has, can, is, was и так далее
+    public static boolean isInfant(int age) {
+        return age < 1;
+    }
+
     // END
 }

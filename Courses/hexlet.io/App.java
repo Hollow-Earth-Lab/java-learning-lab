@@ -153,6 +153,8 @@ class App {
         var one = "Naharis";
         var two = "Mormont";
         var three = "Sand";
+        
+        var text = "Never forget what you are, for surely the world will not";
 
         // Третий символ из первой строки
         System.out.print(one.charAt(2));
@@ -168,6 +170,22 @@ class App {
         System.out.print(" ");
         // Третий символ из второй строки
         System.out.print(two.charAt(2));
+
+        System.out.println();
+
+        // Индексы начинаются с нуля
+        var name = "Java";
+        // Вызов метода и вычитание вместе!
+        var lastIndex = name.length() - 1;
+        System.out.println(lastIndex); // => 3
+        System.out.println(name.length() - 1); // => 3
+
+        // toUpperCase() – переводит слово в верхний регистр
+        System.out.println("Привет, " + name.toUpperCase()); // => Привет, JAVA
+
+        System.out.println(text.length() - 1);
+        System.out.println("First: " + text.substring(0, 1));
+        System.out.println("Last: " + text.substring(text.length() - 1));
 
         // END
     }
