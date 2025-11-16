@@ -239,18 +239,18 @@ public class App {
 }
  */
 
-
+/*
 public class App {
     // BEGIN (write your solution here)
     public static void main(String[] args){
 
-        /*
+        
         var result = 5 > 4;
         System.out.println(result); // => true
 
         System.out.println(App.isInfant(3)); // => false
         System.out.println(App.isInfant(0)); // => 
-        */
+        
 
         System.out.println(App.isPensioner(75)); // true
         System.out.println(App.isPensioner(18)); // false
@@ -272,5 +272,49 @@ public class App {
         return age < 1;
     }
 
+    // END
+}
+*/
+
+public class App {
+    // BEGIN (write your solution here)
+    public static void main(String[] args){
+
+        
+        var result = ("a" == "a");
+        System.out.println(result); // => true
+
+        result = ("a".toUpperCase() == "a".toUpperCase());
+        System.out.println(result); // => false
+
+        // Сравнение, как у примитивных типов данных
+        System.out.println("hm" == "hm"); // true
+        // Сравнение, как у ссылочных типов данных
+        System.out.println("hexlet".toUpperCase() == "hexlet".toUpperCase()); // false
+
+        // Когда Java встречает явно создаваемую строку, выполняется проверка, 
+        // а есть ли уже в памяти такая строка.
+        // Если есть, то она переиспользуется, если нет — создаётся:
+
+        // Выделяется память
+        var name1 = "Java";
+        // Такая строка уже есть, поэтому подставляется ссылка на уже созданную строку
+        // В результате экономится память
+        var name2 = "Java";
+        // Сравнение по ссылке
+        // Обе переменные указывают на один участок памяти
+        System.out.println(name1 == name2); // true
+
+        // Но если строка возвращается из метода, то она помещается 
+        // в свою область памяти со своим уникальным адресом:
+
+        // Выделяется новая память в любом случае
+        var name3 = "java".toUpperCase(); // "JAVA"
+        // Выделяется новая память в любом случае
+        var name4 = "java".toUpperCase(); // "JAVA"
+        System.out.println(name3 == name4); // false
+        System.out.println(name3.equals(name4)); // true
+
+    }
     // END
 }
